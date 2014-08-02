@@ -5,7 +5,7 @@ Install nginx, git and nikola.
 
 Download https://github.com/stanhu/git-webhook-ninja
 
-Link the nginx file, link the settings file in to gwn.
+Copy then edit the nginx file, link the settings file in to gwn.
 
 Run gwn
 
@@ -19,4 +19,5 @@ export WARDEN_DOMAIN=.your_tld.com &&
 ```
 
 
-`ssh fish@ext.porthost.tld -R 0.0.0.0:8888:localhost:6666 -v`
+If NATed run this to tunnel out
+`ssh user@ext.porthost.tld -R 0.0.0.0:8888:localhost:6666 -v`
